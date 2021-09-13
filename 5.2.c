@@ -1,19 +1,12 @@
-#include <stdio.h>
-#include <string.h>
-char x[1000100];
-int main ()
+#include <iostream>
+using namespace std;
+int main()
 {
-	int i,j;
-	scanf("%s",x);
-	int num = strlen(x);
-	for(i=0; i<strlen(x); i++)
+	string x;
+	cin >> x;
+	for(int i=x.length(); i>0; i--)
 	{
-		for(j=0; j<num; j++)
-		{
-			printf("%c",x[j]);
-		}
-		num--;
-		printf("\n");
+		cout << x[i-1];
 	}
 	return 0;
 }
